@@ -2,8 +2,6 @@
 
 ## Sobre o Projeto
 
-[**adicione aqui uma descrição concisa e informativa sobre o seu projeto**]
-
 Este projeto é uma API RESTful construída com Node.js, Express, e Sequelize. Ele fornece uma base sólida para a criação de aplicativos web escaláveis e robustos, com funcionalidades de autenticação, manipulação de dados de usuários e alunos, e upload de arquivos.
 
 ## Principais Funcionalidades
@@ -86,7 +84,7 @@ O servidor estará disponível no endereço `http://localhost:3001` (ou a porta 
 
 ## Link da Aplicação Online
 
-[**insira aqui o link para a sua aplicação online**]
+[**Breve Estarei disponibilizando o link **]
 
 ## Como Contribuir
 
