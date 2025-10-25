@@ -1,17 +1,21 @@
 # API REST com Node.js e Express
 
-## Sobre o Projeto
+##  Sobre o Projeto
 
-Este projeto é uma API RESTful construída com Node.js, Express, e Sequelize. Ele fornece uma base sólida para a criação de aplicativos web escaláveis e robustos, com funcionalidades de autenticação, manipulação de dados de usuários e alunos, e upload de arquivos.
+Este projeto é uma API RESTful construída com Node.js, Express e Sequelize. Ele fornece uma base sólida para a criação de aplicativos web escaláveis, com funcionalidades de autenticação, manipulação de dados de usuários e alunos, e upload de arquivos.
 
-## Principais Funcionalidades
+---
+
+##  Principais Funcionalidades
 
 - **Autenticação de Usuário:** Sistema completo de registro e login com tokens JWT para segurança.
 - **Gerenciamento de Alunos:** Operações CRUD (Criar, Ler, Atualizar, Deletar) para os dados dos alunos.
 - **Upload de Fotos:** Funcionalidade para upload de fotos de perfil dos alunos.
 - **Estrutura Organizada:** O código é modular e bem estruturado, seguindo as melhores práticas do mercado.
 
-## Tecnologias Utilizadas
+---
+
+##  Tecnologias Utilizadas
 
 ### **Backend**
 
@@ -30,7 +34,15 @@ Este projeto é uma API RESTful construída com Node.js, Express, e Sequelize. E
 - **[ESLint](https://eslint.org/)**
 - **[Sequelize-CLI](https://www.npmjs.com/package/sequelize-cli)**
 
-## Como Executar o Projeto
+---
+
+##  Testes dos Endpoints
+
+Todos os endpoints da API foram testados utilizando o cliente REST **[Insomnia](https://insomnia.rest/)**. O Insomnia é uma ferramenta poderosa que facilita o teste e a depuração de APIs, garantindo que todos os recursos funcionem conforme o esperado.
+
+---
+
+##  Como Executar o Projeto
 
 ### **Pré-requisitos**
 
@@ -63,8 +75,8 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 
 4.  **Configure as variáveis de ambiente:**
 
-    - Crie um arquivo `.env` na raiz do projeto, baseado no arquivo `.env.example` (que você pode criar para o seu projeto).
-    - Preencha as variáveis com as informações do seu banco de dados e outras configurações necessárias.
+    - Crie um arquivo `.env` na raiz do projeto.
+    - Preencha as variáveis com as informações do seu banco de dados e outras configurações necessárias (como `DATABASE_URL`, `TOKEN_SECRET`, etc.).
 
 5.  **Execute as migrations do banco de dados:**
 
@@ -82,11 +94,15 @@ npm run dev
 
 O servidor estará disponível no endereço `http://localhost:3001` (ou a porta que você configurou).
 
-## Link da Aplicação Online
+---
 
-[**Breve Estarei disponibilizando o link **]
+##  Link da Aplicação Online
 
-## Como Contribuir
+[**Em breve estarei disponibilizando o link!**]
+
+---
+
+##  Como Contribuir
 
 Sua contribuição é muito bem-vinda! Se você tem sugestões para melhorar este projeto, por favor, siga os passos abaixo:
 
@@ -111,7 +127,9 @@ Sua contribuição é muito bem-vinda! Se você tem sugestões para melhorar est
 
 5.  **Abra um Pull Request.**
 
-## Licença
+---
+
+##  Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
