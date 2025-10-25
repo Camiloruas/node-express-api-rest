@@ -1,0 +1,108 @@
+{
+  // === Extensões / Formatação ===
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "prettier.printWidth": 300,
+
+  // Configurações por Linguagem (para garantir o Prettier)
+  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[javascriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[html]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+
+  // === Configurações de Linguagem/TypeScript/JavaScript ===
+  "typescript.tsserver.maxTsServerMemory": 4096,
+  "javascript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.preferences.includePackageJsonAutoImports": "on",
+  "typescript.preferGoToSourceDefinition": true,
+
+  // === Terminal / Runner (Ajustado para Ubuntu) ===
+  "code-runner.runInTerminal": true,
+  "code-runner.showExecutionMessage": false,
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.executorMap": {
+    "javascript": "clear ; node",
+    "typescript": "clear ; tsx"
+  },
+  // Garante que o terminal integrado no Linux use um shell padrão (como Bash)
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.profiles.windows": {
+    "Git Bash": {
+      "path": "C:\\Program Files\\Git\\bin\\bash.exe"
+    }
+  },
+
+  // === Visual / Workspace ===
+  "workbench.colorTheme": "Dracula Theme",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.editor.labelFormat": "short",
+  "workbench.editor.enablePreview": true,
+  "explorer.compactFolders": false,
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+
+  // === Produtividade / Sugestões ===
+  "editor.quickSuggestionsDelay": 1,
+  "editor.suggestSelection": "first",
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": "on",
+    "strings": "on"
+  },
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.inlineSuggest.enabled": false,
+  "editor.parameterHints.enabled": true,
+  "editor.tabCompletion": "on",
+  "editor.snippetSuggestions": "top",
+  "editor.linkedEditing": true,
+  "editor.wordWrap": "on",
+  "editor.wordWrapColumn": 150,
+  "emmet.triggerExpansionOnTab": true,
+
+  // === Outros (Exclusões / Live Server / Git) ===
+  "files.watcherExclude": {
+    "**/node_modules/**": true
+  },
+  "files.autoSave": "afterDelay",
+  "liveServer.settings.donotVerifyTags": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "git.autofetch": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.codeLens": true,
+  "json.format.enable": false,
+
+  // Removendo Copilot Advanced (se não for necessário)
+  "github.copilot.advanced": {
+    "debug.testOverrideCapiUrl": "https://api.github.com/copilot"
+  },
+  "github.copilot.nextEditSuggestions.enabled": true,
+
+  // Configurações Turbo Console Log / Tailwind CSS
+  "turboConsoleLog.logMessagePrefix": "",
+  "turboConsoleLog.delimiterInsideMessage": "",
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html",
+    "javascript": "javascript",
+    "javascriptreact": "javascript",
+    "typescriptreact": "typescript"
+  },
+  "tailwindCSS.experimental.classRegex": [
+    "tw`([^`]*)",
+    "tw\\(\"([^\"]*)",
+    "tw\\('([^']*)",
+    "className=\"([^\"]*)",
+    "className='([^']*)",
+    "className={`([^`]*)`"
+  ],
+  "eslint.workingDirectories": [],
+  "code-runner.languageIdToFileExtensionMap": {
+    "bat": ".bat",
+    "powershell": ".ps1",
+    "typescript": ".ts"
+  }
+}
