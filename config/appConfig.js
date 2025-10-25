@@ -1,3 +1,3 @@
 export default {
-  url: "https://images.camiloruas.dev/",
+  url: process.env.APP_URL,
 };
