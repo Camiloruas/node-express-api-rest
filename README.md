@@ -2,7 +2,7 @@
 
 ##  Sobre o Projeto
 
-Este projeto é uma API RESTful construída com Node.js, Express e Sequelize. Ele fornece uma base sólida para a criação de aplicativos web escaláveis, com funcionalidades de autenticação, manipulação de dados de usuários e alunos, e upload de arquivos.
+Este projeto é uma API RESTful construída com Node.js, Express e Sequelize. Ele fornece uma base sólida para a criação de aplicativos web, com funcionalidades de autenticação, manipulação de dados de usuários e alunos, e upload de arquivos.
 
 ---
 
