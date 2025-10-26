@@ -1,6 +1,12 @@
-"use strict";Object.defineProperty(exports, "__esModule", {value: true}); function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }var _sequelize = require('sequelize'); var _sequelize2 = _interopRequireDefault(_sequelize);
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
+var _sequelize = require("sequelize");
+var _sequelize2 = _interopRequireDefault(_sequelize);
 
- class Aluno extends _sequelize.Model {
+class Aluno extends _sequelize.Model {
   static init(sequelize) {
     super.init(
       {
@@ -40,33 +46,32 @@
           },
         },
         idade: {
-          type: _sequelize2.default.INTEGER,
-          defaultValue: "",
+          type: Sequelize.INTEGER,
+          defaultValue: null,
           validate: {
             isInt: {
-              msg: "Idade precisa ser um numero inteiro",
+              msg: "Idade precisa ser um número inteiro",
             },
           },
         },
         peso: {
-          type: _sequelize2.default.FLOAT,
-          defaultValue: "",
+          type: Sequelize.FLOAT,
+          defaultValue: null,
           validate: {
             isFloat: {
-              msg: "O peso precisa ser um numero inteiro ou de ponto flutuante",
+              msg: "O peso precisa ser um número inteiro ou de ponto flutuante",
             },
           },
         },
         altura: {
-          // <-- ABRINDO O OBJETO CORRETAMENTE
-          type: _sequelize2.default.FLOAT, // <-- TIPO DENTRO DO OBJETO
-          defaultValue: "",
+          type: Sequelize.FLOAT,
+          defaultValue: null,
           validate: {
             isFloat: {
-              msg: "Altura precisa ser um numero inteiro ou de ponto flutuante",
+              msg: "Altura precisa ser um número inteiro ou de ponto flutuante",
             },
           },
-        }, // <-- FECHANDO O OBJETO CORRETAMENTE
+        },
       },
       {
         sequelize,
@@ -78,4 +83,5 @@
   static associate(models) {
     this.hasMany(models.Foto, { foreignKey: "aluno_id" });
   }
-} exports.default = Aluno;
+}
+exports.default = Aluno;
