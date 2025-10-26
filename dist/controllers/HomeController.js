@@ -1,9 +1,15 @@
-"use strict";Object.defineProperty(exports, "__esModule", {value: true}); function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }var _Aluno = require('../models/Aluno'); var _Aluno2 = _interopRequireDefault(_Aluno);
+"use strict";Object.defineProperty(exports, "__esModule", {value: true});// --- /home/camiloruas/api/src/controllers/HomeController.js ---
 
-class AlunoController {
-  // Cria a classe AlunoController, que agrupa as ações do controlador da página inicial.
+// Remova o import desnecessário, pois esta rota não deve acessar o DB.
+// import Aluno from "../models/Aluno";
+
+// Corrigido para o nome da classe ser HomeController.
+class HomeController {
+  // O método index na rota raiz (/) deve apenas verificar o status do servidor.
   async index(req, res) {
-    const novoAluno = await _Aluno2.default.create({
+    // ⬇️ CORREÇÃO PRINCIPAL: REMOÇÃO DA CRIAÇÃO DO ALUNO ⬇️
+    /*
+    const novoAluno = await Aluno.create({
       nome: "Rafael",
       sobrenome: "Ruas",
       email: "Rafael@gmail.com",
@@ -11,9 +17,16 @@ class AlunoController {
       peso: 64,
       altura: 1.6,
     });
-    // Define o método index, que é a ação padrão para a rota da página inicial.
-    res.json(novoAluno);
+    // res.json(novoAluno);
+    */
+
+    // Define o método index para retornar apenas uma mensagem de status/sucesso.
+    res.json({
+      mensagem: "API REST Node.js em execução!",
+      status: "OK",
+    });
   }
 }
 
-exports. default = new AlunoController(); // Exporta uma nova instância da classe UserController, tornando-a disponível para outros módulos.
+// Corrigido para exportar a instância da HomeController
+exports. default = new HomeController();
