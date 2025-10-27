@@ -26,7 +26,7 @@ var _appConfig = require('../../config/appConfig'); var _appConfig2 = _interopRe
         url: {
           type: _sequelize2.default.VIRTUAL,
           get() {
-            return `${_appConfig2.default.url}/images/${this.getDataValue("filename")}`;
+            return new URL(`/images/${this.getDataValue("filename")}`, _appConfig2.default.url).href;
           },
         },
         // >>> ADIÇÃO CRÍTICA DO CAMPO aluno_id <<<
