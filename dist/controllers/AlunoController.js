@@ -78,7 +78,7 @@ class AlunoController {
       return res.json(aluno);
     } catch (e) {
       return res.status(400).json({
-        erros: e.erros.map((err) => err.message),
+        erros: e.errors.map((err) => err.message),
       });
     }
   }
@@ -102,7 +102,7 @@ class AlunoController {
       return res.json(alunoAtualizado);
     } catch (e) {
       return res.status(400).json({
-        erros: e.erros.map((err) => err.message),
+        erros: e.errors.map((err) => err.message),
       });
     }
   }
@@ -129,7 +129,7 @@ class AlunoController {
       });
     } catch (e) {
       return res.status(400).json({
-        errors: e.errors.map((err) => err.message),
+        erros: e.errors.map((err) => err.message),
       });
     }
   }
