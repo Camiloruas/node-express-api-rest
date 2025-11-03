@@ -2,7 +2,7 @@ import { Router } from "express";
 import multer from "multer";
 
 import fotoController from "../controllers/FotoController";
-import multerConfig from "../../config/multerConfig";
+import multerConfig from "../../config/multerConfig.cjs";
 import loginRequired from "../middlewares/loginRequired";
 
 const upload = multer(multerConfig);
