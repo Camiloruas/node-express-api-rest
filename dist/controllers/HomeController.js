@@ -1,4 +1,5 @@
-"use strict";Object.defineProperty(exports, "__esModule", {value: true});// --- /home/camiloruas/api/src/controllers/HomeController.js ---
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true }); // --- /home/camiloruas/api/src/controllers/HomeController.js ---
 
 // Remova o import desnecessário, pois esta rota não deve acessar o DB.
 // import Aluno from "../models/Aluno";
@@ -17,7 +18,7 @@ class HomeController {
       peso: 64,
       altura: 1.6,
     });
-    // res.json(novoAluno);
+    res.json(novoAluno);
     */
 
     // Define o método index para retornar apenas uma mensagem de status/sucesso.
@@ -29,4 +30,4 @@ class HomeController {
 }
 
 // Corrigido para exportar a instância da HomeController
-exports. default = new HomeController();
+exports.default = new HomeController();
