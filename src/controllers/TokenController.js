@@ -1,4 +1,3 @@
-import { password } from "../../config/config";
 import User from "../models/User";
 import jwt from "jsonwebtoken";
 
