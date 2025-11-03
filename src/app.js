@@ -1,5 +1,5 @@
 import dotenv from "dotenv";
-import { resolve } from "path";
+import { resolve, dirname } from "path";
 
 dotenv.config();
 
@@ -24,10 +24,12 @@ class App {
     // Este método configura os middlewares que serão usados em todas as rotas.
     this.app.use(express.urlencoded({ extended: true })); // Configura o middleware para analisar corpos de requisição com URL encoded (formulários HTML). 'extended: true' permite objetos aninhados.
     this.app.use(express.json()); // Configura o middleware para analisar corpos de requisição com formato JSON.
-    this.app.use(
-      "/images/",
-      express.static(resolve(__dirname, "uploads", "images"))
-    );
+    this.app.use(express.static(resolve(__dirname, "uploads")));
+
+    // const staticFilesPath = resolve(process.cwd(), "uploads", "images");
+    // console.log('Serving static files from:', staticFilesPath);
+    // this.app.use("/images/", express.static(staticFilesPath)
+    // );
   }
 
   routes() {

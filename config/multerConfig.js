@@ -1,16 +1,5 @@
 import multer from "multer";
-import { extname, resolve, dirname } from "path"; // Adicione 'dirname' aqui
-import { fileURLToPath } from "url"; // Importa a função necessária
-
-// --- INÍCIO DA CORREÇÃO PARA __dirname EM MÓDULOS ES ---
-
-// 1. Obtém o caminho do arquivo atual
-const __filename = fileURLToPath(import.meta.url);
-
-// 2. Obtém o caminho do diretório (o novo __dirname)
-const __dirname = dirname(__filename);
-
-// --- FIM DA CORREÇÃO ---
+import { extname, resolve } from "path";
 
 // Define a pasta de destino
 const ROTA_UPLOAD = resolve(__dirname, "..", "uploads", "images");
